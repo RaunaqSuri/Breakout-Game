@@ -86,8 +86,8 @@ public class Breakout extends GraphicsProgram {
 	private int hitPaddle=0; //the number of times the ball has hit the paddle
 	private int bricksLeft =NBRICK_ROWS*NBRICKS_PER_ROW;
 	private int livesLeft = NTURNS;
-	private GLabel lives= new GLabel("Blah blah blah");
-	private GLabel score= new GLabel("BLAH BLAH BLAH");
+	private GLabel lives= new GLabel("Filler text");
+	private GLabel score= new GLabel("Filler text");
 	private int scoreCount=0;
 	private GPoint initialBallPos;
 
@@ -99,7 +99,7 @@ public class Breakout extends GraphicsProgram {
 	private AudioClip BGM = MediaTools.loadAudioClip("EightBitRockinVillageLoop.au");//Background game music
 
 	
-/* Method: run() */
+
 /** Runs the Breakout program. */
 	//Random generator to be used throughout
 	private RandomGenerator rgen = new RandomGenerator();
@@ -123,8 +123,8 @@ public class Breakout extends GraphicsProgram {
         private void setup(){
         	drawBorders();
         	createInfoBoard();
-            setBricks();
-            createPaddle();
+            	setBricks();
+            	createPaddle();
         }
         private void drawBorders() {
         	//The following method will create borders around the game in order to visually show where the walls are
@@ -401,22 +401,7 @@ public class Breakout extends GraphicsProgram {
 				
 			}
 		}
-		/*
-		public void mouseMoved(MouseEvent e){
-			//If the mouse is moved, the paddle moves as well
-			//Only moves the paddle if it is in bounds
-			
-			//Moves paddle left
-			if(paddle!=null){
-				if((paddle.getX()>=0)){ 
-					paddle.move(e.getX()-paddle.getX(), 0);
-						if((paddle.getX()+PADDLE_WIDTH)>=WIDTH){
-							paddle.move(e.getX()-(paddle.getX()+PADDLE_WIDTH), 0);
-						}
-		*/
 		
-				
-			
 		
 		public void mouseClicked(MouseEvent e){
 			//If the ball is reset or the game is starting off, a click will start the ball's movement
