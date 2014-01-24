@@ -93,7 +93,7 @@ public class Breakout extends GraphicsProgram {
 
 //Sound files
 	//From starter file found on: http://see.stanford.edu/see/materials/icspmcs106a/assignments.aspx
-	private AudioClip bounceClip= MediaTools.loadAudioClip("bounce.au");
+	private AudioClip bounceClip= MediaTools.loadAudioClip("Bounce.au");
 	//Royalty-free music found from: http://teknoaxe.com/cgi-bin/link_code_2.pl?386
 	//The person's youtube channel is :http://www.youtube.com/user/teknoaxe/
 	private AudioClip BGM = MediaTools.loadAudioClip("EightBitRockinVillageLoop.au");//Background game music
